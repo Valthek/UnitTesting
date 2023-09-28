@@ -1,5 +1,5 @@
 using TestingAPI.Classes;
-using TestingAPI.Classes.Interface;
+using TestingAPI.Classes;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<IPlanetGenerator, PlanetGenerator>();
+builder.Services.AddSingleton<PlanetGenerator>();
 
 var app = builder.Build();
 

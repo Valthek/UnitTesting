@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using TestingAPI.Classes;
-using TestingAPI.Classes.Interface;
+using TestingAPI.Classes;
 
-namespace BugApi.Controllers
+namespace TestingAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -18,8 +18,7 @@ namespace BugApi.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<Planet> GetWeather()
         {
-            return Enumerable.Range(1, 5).Select(index => weatherGenerator.GeneratePlanet())
-            .ToArray();
+            return null;
         }
 
     }

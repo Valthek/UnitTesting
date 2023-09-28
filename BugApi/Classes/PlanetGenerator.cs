@@ -1,4 +1,4 @@
-﻿using TestingAPI.Classes.Interface;
+﻿using TestingAPI.Classes;
 
 namespace TestingAPI.Classes
 {

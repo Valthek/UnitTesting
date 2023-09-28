@@ -12,13 +12,13 @@ namespace Tests.SimpleOperations.ClassFixture
     public class CubeNumberShould
     {
         private readonly SharedState sharedState;
-        private DuplicateOperations operations;
+        private TestingAPI.Operations.DuplicateOperations operations;
         private readonly ITestOutputHelper outputHelper;
 
         public CubeNumberShould(SharedState sharedState, ITestOutputHelper outputHelper)
         {
             this.sharedState = sharedState;
-            this.operations = new DuplicateOperations();
+            this.operations = new TestingAPI.Operations.DuplicateOperations();
             this.outputHelper = outputHelper;
         }
 
